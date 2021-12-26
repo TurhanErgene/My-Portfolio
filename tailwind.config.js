@@ -1,3 +1,5 @@
+const theme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   mode: "jit",
   content: [
@@ -6,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['"Open Sans"' , ...theme.fontFamily.sans],
+        montserrat: ['"Montserrat"' , ...theme.fontFamily.sans]
+      },
       color: {
         "Primary-light" : "#f8f8f8",
         "Primary-dark" : "#181818",
