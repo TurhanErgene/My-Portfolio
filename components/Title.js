@@ -1,18 +1,17 @@
+import { motion } from "framer-motion";
 import React from "react";
 import Typical from "react-typical";
+
+import GithubIcon from "./icons/Github";
+import LinkedinIcon from "./icons/Linkedin"
 
 const TypingAnimation = React.memo(
   () => {
     return (
       <Typical
-        loop={3}
+        loop={2}
         wrapper="p"
-        steps={[
-          "React Developer",
-          2000,
-          "React Enthusiast",
-          2000,
-        ]}
+        steps={["Full-stack Developer", 2000, "AWS Enthusiast", 2000]}
       />
     );
   },
@@ -31,8 +30,19 @@ const Title = () => {
             <h1 className="mt-4 text-xl font-extrabold tracking-normal text-gray-800 uppercase md:text-4xl md:wt-6 dark:text-white">
               Turhan Ergene
             </h1>
-            <div>
-              <TypingAnimation/>
+            <div className="mt-5 text-2xl font-normal text-transparent md:text-4xl bg-gradient-to-r from-pink-500 via-indigo-400 to-purple-700 bg-clip-text md:mt-5">
+              <TypingAnimation />
+            </div>
+            <div className="flex items-center mt-8 space-x-6 md:mt-4">
+              <motion.a
+                href="https://github.com/turhanergene"
+                target={"_blank"}
+                rel="noopener noreferrer"
+                className="flex items-center justify-center text-gray-800 transition-colors duration-300 dark:text-gray-100 dark:hover:text-pinkish-200 hover:text-pinkish-200"
+                whileHover={{ scale: 1.1 }}
+              >
+                <GithubIcon className={"w-8 h-8 fill-current"} />
+              </motion.a>
             </div>
           </div>
         </section>
