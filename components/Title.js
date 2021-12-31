@@ -55,6 +55,11 @@ const Title = () => {
               </motion.a>
             </div>
           </div>
+
+          {/* code area */}
+          <article> 
+            
+          </article>
         </section>
       </main>
     </>
