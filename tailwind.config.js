@@ -21,7 +21,7 @@ module.exports = {
           200: "#ad1457",
           300: "#880e4f",
         },
-        bluish : {
+        blueish : {
           100: "#81d4fa",
           200: "#0277bd",
         }

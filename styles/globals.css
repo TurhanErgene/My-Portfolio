@@ -3,3 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a:hover{
+  color: #f06292 !important;
+}

@@ -38,10 +38,20 @@ const Title = () => {
                 href="https://github.com/turhanergene"
                 target={"_blank"}
                 rel="noopener noreferrer"
-                className="flex items-center justify-center text-gray-800 transition-colors duration-300 dark:text-gray-100 dark:hover:text-pinkish-200 hover:text-pinkish-200"
-                whileHover={{ scale: 1.1 }}
+                className="flex items-center justify-center text-gray-800 transition-colors duration-300 dark:text-gray-100 hover:text-sky-400"
+                whileHover={{ scale: 1.3 }}
               >
                 <GithubIcon className={"w-8 h-8 fill-current"} />
+              </motion.a>
+
+              <motion.a
+                href="https://www.linkedin.com/in/turhan-e-b25916113/"
+                target={"_blank"}
+                rel="noopener noreferrer"
+                className="flex items-center justify-center text-gray-800 transition-colors duration-300 dark:text-gray-100 hover:text-sky-400"
+                whileHover={{ scale: 1.3 }}
+              >
+                <LinkedinIcon className={"w-8 h-8 fill-current"} />
               </motion.a>
             </div>
           </div>
