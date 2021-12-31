@@ -3,6 +3,7 @@ import Head from "next/head";
 import { motion } from "framer-motion";
 
 import Header from "./Header.js";
+import Title from './Title'
 
 const Layout = ({ title, description, childeren }) => {
   return (
@@ -19,7 +20,9 @@ const Layout = ({ title, description, childeren }) => {
       <div className="relative z-10 px-3 overflow-hidden min-h-screen bg-primary-light antialiased font-montserrat dark:bg-gray-900 dark:text-white">
         <div className="w-full h-full">
           <Header />
-          ss
+          ---
+          <Title/> 
+          ---
           {childeren}
         </div>
         <motion.img
