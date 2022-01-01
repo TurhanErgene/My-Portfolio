@@ -20,9 +20,9 @@ const Layout = ({ title, description, childeren }) => {
       <div className="relative z-10 px-3 overflow-hidden min-h-screen bg-primary-light antialiased font-montserrat dark:bg-gray-900 dark:text-white">
         <div className="w-full h-full">
           <Header />
-          ---
+          
           <Title/> 
-          ---
+        
           {childeren}
         </div>
         <motion.img

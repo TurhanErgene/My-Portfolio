@@ -5,7 +5,6 @@ export default function Home() {
    <>
    <Layout title={"Portfilio"} description={"My Portfilio"}/>
       
-      
     </>
   );
 }
