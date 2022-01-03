@@ -13,19 +13,20 @@ module.exports = {
         sans: ['"Open Sans"', ...theme.fontFamily.sans],
         montserrat: ['"Montserrat"', ...theme.fontFamily.sans],
       },
-      color: {
+      colors: {
         "primary-light": "#f8f8f8",
-        "primary-dark": "#181818",
+        "primary-dark": "#191919",
         pinkish: {
-          100: "#ec407a",
-          200: "#ad1457",
-          300: "#880e4f",
+          100: "#edb5f5",
+          200: "#eb7ad4",
+          300: "#e86ed0",
         },
         blueish: {
-          100: "#81d4fa",
-          200: "#0277bd",
+          100: "#e6f8f9",
+          200: "#b1e8ed",
         },
       },
+
       typography: (theme) => ({
         DEFAULT: {
           css: {
@@ -54,7 +55,7 @@ module.exports = {
     },
   },
 
-  varients: {
+  variants: {
     extend: {
       typography: ["dark"],
     },

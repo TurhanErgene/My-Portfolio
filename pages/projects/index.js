@@ -1,12 +1,14 @@
 import Link from "next/link";
-import Head from "next/head";
 
 import ArrowLeftIcon from "../../components/icons/ArrowLeft";
 import Header from "../../components/Header";
+import ProjectCard from "../../components/ProjectCard";
 
-import { getAllProjects } from '../../functions/getAllProjects'
+import { getAllProjects } from "../../functions/getAllProjects";
 
 export default function ProjectsPage({ projects }) {
+
+  console.log(projects);
   
   return (
     <div className="relative z-10 px-3 overflow-hidden min-h-screen bg-primary-light antialiased font-montserrat dark:bg-gray-900 dark:text-white w-full h-full">
@@ -15,13 +17,16 @@ export default function ProjectsPage({ projects }) {
         <Link href="/">
           <a className="flex items-center space-x-4 font-montserrat pb-6 text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200">
             <ArrowLeftIcon className="w-8 h-8 fill-current" />
-            <span>Back to Home</span>
-            {/* className="text-xl font-normal" */}
+            <span >Back to Home</span>
           </a>
         </Link>
 
         {/* Projects */}
-        <div className="grid grid-cols-1 gap-6 md:gap-8 md:grid-cols-2"></div>
+        <div className="grid grid-cols-1 gap-6 md:gap-8 md:grid-cols-2">
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project}/>
+          ))}
+        </div>
       </section>
     </div>
   );
