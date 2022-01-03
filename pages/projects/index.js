@@ -6,7 +6,8 @@ import Header from "../../components/Header";
 
 import { getAllProjects } from '../../functions/getAllProjects'
 
-export default function ProjectsPage() {
+export default function ProjectsPage({ projects }) {
+  
   return (
     <div className="relative z-10 px-3 overflow-hidden min-h-screen bg-primary-light antialiased font-montserrat dark:bg-gray-900 dark:text-white w-full h-full">
       <Header />
@@ -30,7 +31,7 @@ export const getStaticProps = async () => {
   const projects = await getAllProjects();
   return {
     props: {
-      projects
+      projects,
     },
   };
 };
